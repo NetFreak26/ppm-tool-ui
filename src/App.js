@@ -7,6 +7,9 @@ import { AddProjectTemplate } from './components/Project/AddProjectTemplate';
 import { Provider } from 'react-redux';
 import store from './store';
 import { UpdateProjectTemplate } from './components/Project/UpdateProjectTemplate';
+import { Backlog } from './components/Backlog/Backlog';
+import { AddProjectTaskTemplate } from './components/Backlog/ProjectTask/AddProjectTaskTemplate';
+import { UpdateProjectTaskTemplaate } from './components/Backlog/ProjectTask/UpdateProjectTaskTemplate';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
             <Route path='dashboard' element={<Dashboard />}></Route>
             <Route path='createProject' element={<AddProjectTemplate />}></Route>
             <Route path='updateProject' element={<UpdateProjectTemplate />}></Route>
+            <Route path='backlog' element={<Backlog />}></Route>
+            <Route path='addProjectTask' element={<AddProjectTaskTemplate />}></Route>
+            <Route path='updateProjectTask' element={<UpdateProjectTaskTemplaate />}></Route>
           </Routes>
         </BrowserRouter>
       </Provider>
